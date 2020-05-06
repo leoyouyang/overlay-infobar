@@ -3,7 +3,6 @@ let infobar = $("<div id='overlay-infobar'></div>");
 $('head').append(fonts);
 $('body').prepend(infobar);
 
-//ori 760*165 | .75 570*124 | .50 380*84      ARRESTED DEVELOPMENT
 let bgFrame, bgFrameWidth = 380,
   bgFrameHeight = 84,
   bgFrameColor = '#FFD93F',
