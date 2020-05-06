@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Overlay Infobar",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_title": "Overlay Infobar",
+    "default_popup": "popup.html"
+  },
+
+  "icons": { "128": "icon128.png"},
+
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["animate.css", "content.css"],
+      "js": ["jquery-3.4.1.min.js", "p5.js", "content.js"]
+    }
+  ]
+}
